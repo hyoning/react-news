@@ -54,7 +54,8 @@ function NavigationBar(props) {
                     to={`/news/category/${category.value}`}
                     className={({ isActive }) =>
                       `categories-list ${isActive ? "active-link" : ""}`
-                    }>
+                    }
+                    onClick={handleMenuIconClick}>
                     {category.categoryName}
                   </Nav.Link>
                 </Nav.Item>
